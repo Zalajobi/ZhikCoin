@@ -1,0 +1,64 @@
+/*Header Start*/
+#header {
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+#basic-navbar-nav>div>a {
+    font-size: 12px;
+    font-weight: bold;
+}
+/*Header End*/
+
+/*About US Start*/
+.slider:hover {
+    cursor: grabbing;
+}
+
+.slider>h4 {
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/*About Us End*/
+
+/*Index Page Start*/
+#hero {
+    height: 800px;
+    width: 100%;
+    background-image: url("https://res.cloudinary.com/zalajobi/image/upload/v1625294147/Zhik-coin/gold-3080552_1280_vx8yba.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+    #hero {
+        background-image: url("https://res.cloudinary.com/zalajobi/image/upload/v1625294241/Zhik-coin/gold-3080552_640_mobile_r5gv14.jpg");
+        background-size: 100% 100%;
+        height: 400px;
+    }
+}
+
+@media (max-width: 425px) {
+    #hero {
+        height: 250px;
+    }
+}
+
+#landing-container>div>h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+
+/*Index Page End*/
