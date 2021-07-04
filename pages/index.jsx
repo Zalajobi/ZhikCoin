@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import Header from "../Component/Header";
 import Hero from "../Component/LandingPage/Hero";
 import Footer from "../Component/Footer";
+import Tokenomics from "../Component/LandingPage/Tokenomics";
 
 export default function Home() {
   return (
@@ -16,9 +17,11 @@ export default function Home() {
 
 
         <div className="d-flex flex-column">
-          <Header/>
+            <Header/>
 
-          <Hero/>
+            <Hero/>
+
+            <Tokenomics/>
 
           <Footer/>
         </div>
