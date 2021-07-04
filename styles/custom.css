@@ -108,3 +108,26 @@
 }
 
 /*Index Page End*/
+
+
+/*Portfolio Start*/
+.token-name {
+    text-align: center;
+    font-size: 26px;
+}
+
+.token-desc-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.token-value-desc {
+    color: rgba(0,0,0,.5);
+    font-size: 18px;
+}
+
+/*Portfolio End*/

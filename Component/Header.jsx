@@ -2,31 +2,30 @@ import React, {useEffect, useState} from "react";
 import Web3 from "web3"
 import {Button, Container, Nav, Navbar} from "react-bootstrap";
 
+
 const Header = (props) => {
+
+    let web3 = new Web3()
 
     // Connect MetaMask
     function connectMetamask() {
-        let web3 = new Web3();
-
         if(window.ethereum) {
             web3 = new Web3(window.ethereum);
             try {
                 window.ethereum.enable().then(function() {
-                    console.log('Access Granted')
-                    // web3.eth.getAccounts((err, res) => {
-                    //     console.log(res)
-                    // })
+                    web3.eth.getAccounts((err, res) => {
+                        localStorage.setItem('address', res[0])
+                        // console.log(localStorage.getItem('address'))
+                    })
                     setStatus('Connected')
                 });
             } catch (e) {
-                // User has denied account access to DApp...
                 console.log('Access Denied')
             }
         }
         else if (window.web3) {
             web3 = new Web3(web3.currentProvider);
         }
-        // Non-DApp Browsers
         else {
             alert("Please install MetaMask !");
         }
