@@ -1,12 +1,11 @@
 import React from "react";
 import {Col, Container, Image, Row} from "react-bootstrap";
+import PageDescription from "../Common/PageDescription";
 
 const Owner = (props) => {
     return (
         <React.Fragment>
-            <div className="d-flex flex-column w-100 align-items-center justify-content-end text-white" style={{background: 'url(https://res.cloudinary.com/zalajobi/image/upload/v1625333290/Zhik-coin/about/bg-about_i2qtpr.svg)', backgroundSize: 'cover', height: '200px'}}>
-                <h1>About</h1>
-            </div>
+            <PageDescription desc="About"/>
 
             <div>
                 <Container>

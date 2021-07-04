@@ -55,8 +55,7 @@ const Header = (props) => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto w-50">
                             <Nav.Link href="/" className="nav-link mx-auto text-white text-uppercase">Home</Nav.Link>
-                            {/*<Nav.Link href="/" className="nav-link mx-auto text-white text-uppercase">bank</Nav.Link>*/}
-                            <Nav.Link href="/" className="nav-link mx-auto text-white text-uppercase">my portfolio</Nav.Link>
+                            <Nav.Link href="/portfolio" className="nav-link mx-auto text-white text-uppercase">my portfolio</Nav.Link>
                             <Nav.Link href="/about" className="nav-link mx-auto text-white text-uppercase">About</Nav.Link>
                             <Button className="mx-auto btn btn-outline-info bg-transparent" onClick={connectMetamask}><i className="icofont-plugin pr-2"></i>{status}</Button>
                         </Nav>

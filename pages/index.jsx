@@ -6,6 +6,7 @@ import Header from "../Component/Header";
 import Hero from "../Component/LandingPage/Hero";
 import Footer from "../Component/Footer";
 import Tokenomics from "../Component/LandingPage/Tokenomics";
+import Technical from "../Component/LandingPage/Technical";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
 
             <Tokenomics/>
 
+            <Technical/>
           <Footer/>
         </div>
       </React.Fragment>
