@@ -8,7 +8,7 @@ const Footer = (props) => {
                 <Container>
                     <Row className="my-5">
                         <Col lg="3" className="d-flex flex-column px-lg-2 px-3">
-                            <p className="text-white px-lg-4 mb-4">IGBALAJOBI Zhikrullah</p>
+                            <p className="text-white px-lg-4 mb-lg-4 mb-1">IGBALAJOBI Zhikrullah</p>
 
                             <div className="d-flex flex-row px-lg-4 mt-2">
                                 <div style={{width: '35px', height: '35px'}} className="socials border border-light d-flex align-items-center justify-content-center mr-auto">
@@ -33,8 +33,8 @@ const Footer = (props) => {
                             </div>
                         </Col>
 
-                        <Col lg="5" className="d-flex flex-column px-lg-5 px-3">
-                            <p className="text-white px-lg-5 mb-4">ZHIK Social Platform</p>
+                        <Col lg="5" className="d-flex flex-column px-lg-5 px-3 mt-4 mt-lg-0">
+                            <p className="text-white px-lg-5 mb-lg-4 mb-1">ZHIK Social Platform</p>
 
                             <div className="d-flex flex-row px-lg-5 my-2">
                                 <div style={{width: '35px', height: '35px'}} className="socials border border-light d-flex align-items-center justify-content-center mr-auto">
@@ -81,8 +81,8 @@ const Footer = (props) => {
                             </div>
                         </Col>
 
-                        <Col lg="4" className="d-flex flex-column px-lg-5 px-3">
-                            <p className="text-white px-lg-5 mb-4">ZHIK Social Platform</p>
+                        <Col lg="4" className="d-flex flex-column px-lg-5 px-3 mt-4">
+                            <p className="text-white px-lg-5 mb-lg-4 mb-1">Support</p>
 
                             <div className="d-flex flex-column my-2 contact-us px-lg-5">
                                 <p className="text-decoration-none text-white mb-0 faq"><a>FAQ</a></p>

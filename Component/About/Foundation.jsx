@@ -5,7 +5,7 @@ import {Col, Container, Image, Row} from "react-bootstrap";
 const Foundation = (props) => {
     return (
         <React.Fragment>
-            <div className="d-flex> pt-5" style={{background: '#fafafa', maxHeight: '700px', height: '500px'}}>
+            <div className="d-flex> pt-5" style={{background: '#fafafa', maxHeight: '700px'}}>
                 <Container>
                     <Row>
                         <Col lg="7" className="d-flex flex-column">
@@ -16,7 +16,7 @@ const Foundation = (props) => {
 
                         <Col lg="5" className="d-flex flex-column">
                             <Image src="https://res.cloudinary.com/zalajobi/image/upload/v1625334058/Zhik-coin/about/foundation_njxnf1.svg"
-                                   className="w-100 h-100" alt="Background image"/>
+                                   className="w-100 h-100" alt="Background image" rounded/>
                         </Col>
                     </Row>
                 </Container>
