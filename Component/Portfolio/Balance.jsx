@@ -12,7 +12,7 @@ const Balance = (props) => {
     const [vote, setVote] = useState(0);
     const [delegate, setDelegate] = useState(0);
     const [mintCap, setMintCap] = useState(0);
-    const [minTimeBetweenMints, setMinTimeBetweenMints] = useState('');
+    const [minTimeBetweenMints, setMinTimeBetweenMints] = useState(0);
     const [mintingAllowedAfter, setMintingAllowedAfter] = useState(0);
     const [minter, setMinter] = useState('');
     const [checkpoint, setCheckpoint] = useState(0);
