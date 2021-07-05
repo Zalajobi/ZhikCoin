@@ -8,14 +8,16 @@ const Tokenomics = (props) => {
 
     const [price, setPrice] = useState(0);
     const [marketCap, setMarketCap] = useState(0);
+    const [dailyChange, setDailyChange] = useState(0);
     useEffect(() => {
-        getPrice()
+        getInfo()
     });
 
-    async function getPrice() {
+    async function getInfo() {
         try {
-            const res = await axios.get(`https://api.coingecko.com/api/v3/simple/price?ids=Uniswap&vs_currencies=usd&include_market_cap=true`)
+            const res = await axios.get(`https://api.coingecko.com/api/v3/simple/price?ids=Uniswap&vs_currencies=usd&include_market_cap=true&include_24hr_change=true`)
             setPrice(res.data.uniswap.usd)
+            setDailyChange(res.data.uniswap.usd_24h_change)
             setMarketCap(res.data.uniswap.usd_market_cap)
         } catch (err) {
             setPrice(0)
@@ -32,8 +34,8 @@ const Tokenomics = (props) => {
                     <Row className="bg-white">
                         <Col lg="4" className="d-flex align-items-center justify-content-center border-right" style={{height: '120px'}}>
                             <div className="d-flex flex-column align-items-center justify-content-center w-75">
-                                <CountUp className="counter-up" end={250690} start={0} duration={8} separator=","/>
-                                <p className="text-black-50">Holders</p>
+                                <h2 className="counter-up"><CountUp end={dailyChange} start={0} duration={8} separator=","/>%</h2>
+                                <p className="text-black-50">24 Hour Change</p>
                             </div>
                         </Col>
 
